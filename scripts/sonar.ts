@@ -11,8 +11,7 @@ scanner(
       "sonar.newCodePeriod": "previous_version",
       "sonar.qualitygate": "DDD",
       "sonar.sources": "src",
-      "sonar.tests": "tests",
-      "sonar.javascript.lcov.reportPaths": "coverage.lcov",
+      "sonar.tests": "tests"
     },
   },
   (error: unknown) => {

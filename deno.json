@@ -50,6 +50,6 @@
 
   "tasks": {
     "test": "rm -rf coverage/;deno fmt; deno test --coverage; deno coverage --exclude=tests;deno coverage --exclude=tests --html; deno check src/; deno lint src/ --compact",
-    "sonar": "rm coverage.lcov; rm -rf cov_profile;deno fmt; deno test --env --allow-env --allow-net --allow-read --coverage=cov_profile && deno coverage cov_profile --lcov > coverage.lcov && deno run --allow-env --allow-write --allow-sys --allow-run --env --allow-read --allow-net scripts/sonar.ts"
+    "sonar": "deno fmt; deno run --allow-env --allow-write --allow-sys --allow-run --env --allow-read --allow-net scripts/sonar.ts"
   }
 }
