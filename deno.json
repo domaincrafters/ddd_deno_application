@@ -8,14 +8,24 @@
       "noImplicitReturns": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
-      "noUncheckedIndexedAccess": true
+      "noUncheckedIndexedAccess": true,
+      "strictPropertyInitialization": true,
+      "strictFunctionTypes": true
   },
   "lint": {
       "include": ["src/"],
       "rules": {
-        "tags": ["deno-lint", "recommended"],
-        "include": ["missing-constraint", "missing-explicit-type"]
-      }
+        "tags": ["recommended"],
+        "include": [
+          "explicit-function-return-type",
+          "no-non-null-asserted-optional-chain",
+          "no-non-null-assertion",
+          "no-self-compare",
+          "no-sync-fn-in-async-fn",
+          "no-throw-literal",
+          "no-undef"
+        ]
+    }
   },
   "fmt": {
       "useTabs": false,
