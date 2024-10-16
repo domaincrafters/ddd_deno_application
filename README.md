@@ -7,7 +7,6 @@
 [![JSR](https://jsr.io/badges/@domaincrafters/application)](https://jsr.io/@domaincrafters/application)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=domaincrafters.deno.application&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=domaincrafters.deno.application)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=domaincrafters.deno.application&metric=coverage)](https://sonarcloud.io/summary/new_code?id=domaincrafters.deno.application)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=domaincrafters.deno.application&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=domaincrafters.deno.application)
 
 Domaincrafters/application is a package designed to simplify the development of **educational** Domain-Driven Design (DDD) projects in Deno using TypeScript. It provides essential application layer constructs that embody DDD principles, including Use Case and Output Port. 🎯
