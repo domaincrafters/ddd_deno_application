@@ -9,21 +9,22 @@
  * Interface representing a Use Case.
  *
  * The Use Case is responsible for executing a specific business logic
- * with the provided input data.
+ * with the provided input data and returning an output.
  *
  * @template Input - The type of the input data required to execute the use case.
+ * @template Output - The type of the output data returned by the use case.
  *
  * @example
  * // Example implementation of a UseCase that processes a string input.
- * class PrintUseCase implements UseCase<string> {
+ * class PrintUseCase implements UseCase<string, void> {
  *     async execute(input: string): Promise<void> {
  *         console.log(input);
  *     }
  * }
  *
- * const useCase: UseCase<string> = new PrintUseCase();
+ * const useCase: UseCase<string, void> = new PrintUseCase();
  * useCase.execute("Hello, World!"); // Outputs: Hello, World!
  */
-export interface UseCase<Input> {
-    execute(input: Input): Promise<void>;
+export interface UseCase<Input, Output> {
+    execute(input: Input): Promise<Output>;
 }

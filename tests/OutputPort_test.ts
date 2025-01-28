@@ -5,30 +5,30 @@
  * https://opensource.org/licenses/MIT
  */
 
-import type { UseCase } from '@domaincrafters/application/mod.ts';
+import type { OutputPort } from '@domaincrafters/application/mod.ts';
 import { assertEquals } from '@std/assert';
 
-interface InputData {
-  value: number;
+interface OutputData {
+  message: string;
 }
 
-// Mock implementation of UseCase
-class MockUseCase implements UseCase<InputData> {
-  public executedWith: InputData | null = null;
+// Mock implementation of OutputPort
+class MockOutputPort implements OutputPort<OutputData> {
+  public receivedOutput: OutputData | null = null;
 
-  async execute(input: InputData): Promise<void> {
-    this.executedWith = input;
+  present(output: OutputData): void {
+    this.receivedOutput = output;
   }
 }
 
-Deno.test("UseCase should execute with the provided input data", async () => {
+Deno.test("OutputPort should receive and store output data", () => {
   // Arrange
-  const useCase = new MockUseCase();
-  const inputData: InputData = { value: 42 };
+  const outputPort = new MockOutputPort();
+  const outputData: OutputData = { message: "Test message" };
 
   // Act
-  await useCase.execute(inputData);
+  outputPort.present(outputData);
 
   // Assert
-  assertEquals(useCase.executedWith, inputData);
+  assertEquals(outputPort.receivedOutput, outputData);
 });

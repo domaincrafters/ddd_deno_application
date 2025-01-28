@@ -17,8 +17,8 @@ See the [CHANGELOG](CHANGELOG.md) for detailed information about changes in each
 
 ## Features ✨
 
-- **UseCase Interface**: Defines a standard for executing business logic with provided input.
-- **OutputPort Interface**: Represents a presenter interface responsible for presenting output data from a use case.
+- **UseCase Interface**: Defines a standard for executing business logic with provided input and output.
+- **OutputPort Interface**: Represents a presenter interface responsible for presenting extra output data from a use case.
 
 ## Installation 📦
 
