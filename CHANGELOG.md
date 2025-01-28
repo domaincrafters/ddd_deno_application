@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/domaincrafters/ddd_deno_application/compare/v1.0.1...v1.0.2) (2025-01-28)
+
+
+### Bug Fixes
+
+* Output type is now optional ([3715fec](https://github.com/domaincrafters/ddd_deno_application/commit/3715fecbaff0c7964ead36a419172b15995284fa))
+
 ## [1.0.1](https://github.com/domaincrafters/ddd_deno_application/compare/v1.0.0...v1.0.1) (2025-01-28)
 
 
