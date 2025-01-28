@@ -13,7 +13,7 @@ interface InputData {
 }
 
 // Mock implementation of UseCase
-class MockUseCaseWithVoidOutput implements UseCase<InputData, void> {
+class MockUseCaseWithVoidOutput implements UseCase<InputData> {
   public executedWith: InputData | null = null;
 
   async execute(input: InputData): Promise<void> {

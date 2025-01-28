@@ -25,6 +25,6 @@
  * const useCase: UseCase<string, void> = new PrintUseCase();
  * useCase.execute("Hello, World!"); // Outputs: Hello, World!
  */
-export interface UseCase<Input, Output> {
+export interface UseCase<Input, Output = void> {
     execute(input: Input): Promise<Output>;
 }
